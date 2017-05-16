@@ -1,0 +1,139 @@
+﻿body {
+padding-top: 40px;
+}
+
+.container {
+    position: relative;
+}
+
+label small {
+color: #678;
+}
+
+span.req {
+color: maroon;
+font-size: 110%;
+}
+
+.status {
+color: orangered;
+}
+
+form-socialbar {
+position: absolute;
+}
+
+.form-socialbar span {
+font-size: 16px;
+float: left;
+color: white; 
+background-color: #5bc0de;
+margin-left: 18px;
+padding: 13px 13px 13px 13px;
+width: 200px;
+border-top-left-radius: 3px;
+border-bottom-left-radius: 3px;
+}
+
+.form-socialbar ul {
+overflow: hidden;
+background-color: #5dc0de;
+margin-right: 18px;
+padding: 0;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+
+.form-socialbar li {
+list-style: none;
+float: left;
+}
+
+.form-socialbar li a {
+background: url('../images/social_icons.png') no-repeat 0 0;
+display: block;
+width: 45px;
+height: 50px;
+}
+
+.form-socialbar li .facebook { 
+background-position: -350px 0;
+}
+
+.form-socialbar li .facebook:hover {
+background-position: -350px -50px;
+}
+
+.form-socialbar li .twitter {
+background-position: -300px 0;
+}
+
+.form-socialbar li .twitter:hover {
+background-position: -300px -50px;
+}
+
+.form-socialbar li .gplus {
+background-position: -50px 0;
+}
+
+.form-socialbar li .gplus:hover {
+background-position: -50px -50px;
+}
+
+.form-socialbar li .linkedin {
+background-position: -100px 0;
+}
+
+.form-socialbar li .linkedin:hover {
+background-position: -100px -50px;
+}
+
+.form-socialbar li .youtube {
+background-position: -200px 0;
+}
+
+.form-socialbar li .youtube:hover {
+background-position: -200px -50px;
+}
+
+
+
+.recommendation p {
+    display: table-cell;
+    padding-right: 15px;
+    position: relative;
+}
+
+
+/* Rating */
+
+fieldset { margin-left: 12px; padding: 0; }
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > label { 
+  color: #ddd; 
+  float: right; 
+}
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+

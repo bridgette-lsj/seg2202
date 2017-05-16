@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<head>
+
+<title>Order</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="icon" href="../img/favicon.png">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../js/top.js"></script>
+<script src="../js/forms.js"></script>
+
+<!--css-->
+<link href="../css/footer2.css" rel="stylesheet" type="text/css" />
+<link href="../css/nav.css" rel="stylesheet" type="text/css" />
+<link href="../css/bg.css" rel="stylesheet" type="text/css" />
+<link href="../css/share.css" rel="stylesheet" type="text/css" />
+<link href="../css/contain.css" rel="stylesheet" type="text/css" />
+<link href="../css/forms.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+    <!--nav-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">TechWhiz</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Desktop</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="hpenvy700.html">Mainstream Desktop</a></li>
+                                    <li><a href="appleimac.html">All-in-One Desktop</a></li>
+                                    <li><a href="alienwarealpha.html">Compact Desktop</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Laptop</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="dellxps13.html">Ultrabook</a></li>
+                                    <li><a href="lenovoyoga500.html">Convertible Laptop</a></li>
+                                    <li><a href="surfacepro4.html">2-in-1 Devices</a></li>
+                                    <li><a href="acere5.html">Traditional Laptop</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Peripherals</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="applekeyboard.html">Keyboard</a></li>
+                                    <li><a href="boseheadphone.html">Headphones</a></li>
+                                    <li><a href="applemouse.html">Mouse</a></li>
+                                    <li><a href="seagateharddrive.html">External Hard Drive</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="bitdefender1.html">Antivirus</a></li>
+                                    <li><a href="microsoftoffice.html">Microsoft Office</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="ep.html">Events and Promotions</a></li>
+                    <li><a href="faq.html">Support</a></li>
+                    <li><a href="tc.html">Terms and Conditions</a></li>
+                </ul>
+
+                <!--search-->
+                <form class="navbar-form navbar-left">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!--login and register-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="register.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="center">
+        <div class="container">
+            <div class="forms">
+
+                <h1 class="well">Order Form</h1>
+
+                <div class="col-lg-12 well">
+                    <div class="row">
+                        <form>
+                            <div class="col-lg-12">
+                                <h3>Billing Information</h3><hr />
+                                <div class="row">
+                                    <div class="col-sm-6 form-group">
+                                        <label>First Name</label>
+                                        <input class="form-control" type="text" name="firstname" alt="first name" id="txt" onkeyup="Validate(this)" placeholder="Enter First Name Here" required>
+                                    </div>
+
+                                    <div class="col-sm-6 form-group">
+                                        <label>Last Name</label>
+                                        <input class="form-control" type="text" name="lastname" alt="last name" id="txt" onkeyup="Validate(this)" placeholder="Enter Last Name Here" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input class="form-control" type="text" name="phone" alt="phone" id="phone" onchange="phone_validate(this.value);" placeholder="Enter Phone Number Here   (no space)" required>
+                                    <div class="status" id="status1"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Email Address</label>
+                                    <input class="form-control" type="text" name="email" alt="email" id="email" onchange="email_validate(this.value);" placeholder="Enter Email Address Here" required>
+                                    <div class="status" id="status2"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Billing Address</label>
+                                    <textarea class="form-control" rows="3" name="billing address" alt="billing address" placeholder="Enter Billing Address Here"></textarea>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-4 form-group">
+                                        <label>City</label>
+                                        <input class="form-control" type="text" name="city" alt="city" id="txt" onkeyup="Validate(this)" placeholder="Enter City Name Here" required>
+                                    </div>
+
+                                    <div class="col-sm-4 form-group">
+                                        <label>State</label>
+                                        <select class="form-control" name="state" required>
+                                            <option value="">Please choose State: </option>
+                                            <option value="Johor">Johor</option>
+                                            <option value="Kedah">Kedah</option>
+                                            <option value="Kelantan">Kelantan</option>
+                                            <option value="Melaka">Melaka</option>
+                                            <option value="Negeri Sembilan">Negeri Sembilan</option>
+                                            <option value="Pahang">Pahang</option>
+                                            <option value="Perak">Perak</option>
+                                            <option value="Perlis">Perlis</option>
+                                            <option value="Pulau Pinang">Pulau Pinang</option>
+                                            <option value="Sabah">Sabah</option>
+                                            <option value="Sarawak">Sarawak</option>
+                                            <option value="Selangor">Selangor</option>
+                                            <option value="Terengganu">Terengganu</option>
+                                            <option value="Kuala Lumpur">Wilayah Persekutuan –  Kuala Lumpur</option>
+                                            <option value="Putrajaya">Wilayah Persekutuan – Putrajaya</option>
+                                            <option value="Labuan">Wilayah Persekutuan – Labuan</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-sm-4 form-group">
+                                        <label>Zip</label>
+                                        <input class="form-control" type="text" name="zip" alt="zip" placeholder="Enter Zip Code Here" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="5" required>
+                                    </div>
+                                </div>
+
+                                <!--Delivery Address-->
+
+                                <label>Delivery Address</label><br />
+                                <div class="radio">
+                                    <label><input type="radio" name="Delivery" id="alter" required>Alternative delivery address</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="Delivery" required>Same as billing address</label>
+                                </div>
+
+                                <div class="col-lg-12 well" id="addr2">
+                                    <div class="form-group">
+                                        <label>Delivery Address</label>
+                                        <textarea class="form-control" rows="3" name="delivery address" alt="delivery address" placeholder="Enter Delivery Address Here"></textarea>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-4 form-group">
+                                            <label>City</label>
+                                            <input class="form-control" type="text" name="city" alt="city" id="txt" onkeyup="Validate(this)" placeholder="Enter City Name Here">
+                                        </div>
+
+                                        <div class="col-sm-4 form-group">
+                                            <label>State</label>
+                                            <select class="form-control" name="state">
+                                                <option value="">Please choose State: </option>
+                                                <option value="Johor">Johor</option>
+                                                <option value="Kedah">Kedah</option>
+                                                <option value="Kelantan">Kelantan</option>
+                                                <option value="Melaka">Melaka</option>
+                                                <option value="Negeri Sembilan">Negeri Sembilan</option>
+                                                <option value="Pahang">Pahang</option>
+                                                <option value="Perak">Perak</option>
+                                                <option value="Perlis">Perlis</option>
+                                                <option value="Pulau Pinang">Pulau Pinang</option>
+                                                <option value="Sabah">Sabah</option>
+                                                <option value="Sarawak">Sarawak</option>
+                                                <option value="Selangor">Selangor</option>
+                                                <option value="Terengganu">Terengganu</option>
+                                                <option value="Kuala Lumpur">Wilayah Persekutuan –  Kuala Lumpur</option>
+                                                <option value="Putrajaya">Wilayah Persekutuan – Putrajaya</option>
+                                                <option value="Labuan">Wilayah Persekutuan – Labuan</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-sm-4 form-group">
+                                            <label>Zip</label>
+                                            <input class="form-control" type="text" name="zip" alt="zip" placeholder="Enter Zip Code Here" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="5">
+                                        </div>
+                                    </div>
+                                </div>
+<br>
+                                <div class="form-group">
+                                    <label>Special Request / Instructions</label>
+                                    <textarea class="form-control" rows="3" name="request" alt="request" placeholder="Enter Special Request or Instructions Here"></textarea>
+                                </div>
+
+                                <!--Payment Method-->
+                                <h3>Payment Method</h3><hr />
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="payment" id="credit" title="Credit Card" required> Credit Card &nbsp;&nbsp;
+                                        <img src="../img/creditcards.png" alt="Credit Card" style="width: 20%" />
+                                    </label>
+                                </div>   
+								<br>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="payment" id="paypal" title="PayPal" required> PayPal
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <img src="../img/paypal.png" alt="PayPal" style="width: 16%" />
+                                    </label>
+                                </div>
+                     
+                                <!--Credit Card-->
+                                <div class="col-lg-12 well" id="card">
+                                    <div class="row">
+                                        <div class="col-sm-5 form-group">
+                                            <label>Card Type</label>
+                                            <select class="form-control" name="card" required>
+                                                <option value="">Please choose Card Type: </option>
+                                                <option value="Visa">Visa Card</option>
+                                                <option value="Master">Master Card</option>
+                                                <option value="American Express">American Express</option>
+                                                <option value="Discover">Discover</option>
+                                            </select>
+                                        </div></div>
+
+                                        <div class="row">
+                                            <div class="col-sm-5 form-group">
+                                                <label>Card Number</label>
+                                                <input class="form-control" type="text" name="card number" alt="card number" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="16" required>
+                                            </div>
+
+                                            <div class="col-sm-5 form-group">
+                                                <label>Name on Card</label>
+                                                <input class="form-control" type="text" name="name on card" alt="name on card" id="txt" onkeyup="Validate(this)" required>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-2 form-group">
+                                                <label>Expiry Date</label>
+                                                <select class="form-control" name="month" required>
+                                                    <option value="">MM</option>
+                                                    <option value="January">01 - January</option>
+                                                    <option value="February">02 - February</option>
+                                                    <option value="March">03 - March</option>
+                                                    <option value="April">04 - April</option>
+                                                    <option value="May">05 - May</option>
+                                                    <option value="June">06 - June</option>
+                                                    <option value="July">07 - July</option>
+                                                    <option value="August">08 - August</option>
+                                                    <option value="September">09 - September</option>
+                                                    <option value="October">10 - October</option>
+                                                    <option value="October">11 - November</option>
+                                                    <option value="October">12 - December</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-sm-2 form-group">
+                                                <label> &nbsp;</label>
+                                                <select class="form-control" name="year" required>
+                                                    <option value="">YY</option>
+                                                    <option value="2016">16</option>
+                                                    <option value="2017">17</option>
+                                                    <option value="2018">18</option>
+                                                    <option value="2019">19</option>
+                                                    <option value="2020">20</option>
+                                                    <option value="2021">21</option>
+                                                    <option value="2022">22</option>
+                                                    <option value="2023">23</option>
+                                                    <option value="2024">24</option>
+                                                    <option value="2025">25</option>
+                                                    <option value="2026">26</option>
+                                                </select>
+                                            </div>
+
+
+                                            <div class="col-sm-1 form-group">
+                                                <label>CVV </label> <a href="#" style="color: darkslateblue" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="The 3-digit number on the back of your card.">&#10067;</a>
+                                                <input class="form-control" type="text" name="cvv" alt="cvv" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="3" required>
+                                            </div>
+
+
+                                            <div class="col-sm-2 form-group">
+                                                <label>Zip Code </label> <a href="#" style="color: darkslateblue" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="For security reason, please provide the zip code associated with your credit card.">&#10067;</a>
+                                                <input class="form-control" type="text" name="code" alt="zipcode" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="5" required>
+                                            </div>
+                                        </div>
+                                    </div><br />
+                                <button type="button" class="btn btn-lg btn-info" id="checkout"><a href="mailto:janice1397@gmail.com">Checkout</a></button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Back to top-->
+        <p id="back-top">
+            <a href="#top"><span></span> &nbsp; &uarr; Back to Top</a>
+        </p>
+    </div>
+
+<!--footer-->
+	<footer class="footer-distributed">
+	
+
+			<div class="footer-left">
+
+				<h3>Tech<span>Whiz</span></h3>
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+						|
+					<a href="about.html">About</a>
+						|
+					<a href="hpenvy700.html">Products</a>
+						|
+					<a href="order.html">Order</a>
+						|
+					<a href="contact.html">Contact</a>
+					|
+					<a href="ep.html">Events and Promotions</a>
+					|
+					<a href="support.html">Support</a>
+					|
+					<a href="tc.html">Terms and Conditions</a>
+						
+				</p>
+
+				<p class="footer-company-name">TechWhiz &copy; 2016</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>No. 20, Jalan PJS 11/5, Bandar Sunway </span> 46150 Petaling Jaya, Selangor, Malaysia</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+603 62556655</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:janice1397@gmail.com">techwhiz@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					TechWhiz started its business on 5th October 2016 as a trading company that distributes computer hardware and software.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+					
+					
+
+				</div>
+
+
+			</div>
+			
+ <div style="padding-left: 28px">
+                            <p style="font-size: 15px; color:white;">Subscribe to us: &nbsp;</p>
+                            <input type="text" name="email" alt="email" style="height: 45px; width: 75%; border: hidden; padding-left: 20px" placeholder="Enter Email..." required /> &nbsp;&nbsp;
+                            <button class="btn btn-md btn-info btn-primary" type="button"><a href="mailto:janice1397@gmail.com">Subscribe</a></button>
+                            <br />
+                        </div>
+		</footer>
+            
+
+</div>
+</body>
+</html>

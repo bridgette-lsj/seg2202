@@ -1,0 +1,273 @@
+body {
+	margin: 0;
+	font-family: 'Open Sans', serif;
+}
+
+.module {
+	background-image: url("../images/background.jpg");
+  	width: 100%;
+	height: 900px;
+	position: relative;
+	z-index: -1000;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
+div.module img {
+	margin: 0;
+	position: absolute;
+	width: 650px;
+	height: 650px;
+	top: 125px;
+	right: 120px;
+}
+
+.ml h1 {
+	font-family: 'Open Sans', serif;
+	color: white;
+	margin: 0;
+	top: 245px;
+	left: 100px;
+	padding: 0px;
+	text-transform: uppercase;
+	font-size: 60px;
+	white-space: pre-line;
+	position: absolute;
+}
+
+.ml h2 {
+	font-family: 'Open Sans', serif;
+	color: white;
+	margin: 0;
+	top: 265px;
+	left: 100px;
+	padding: 0px;
+	text-transform: uppercase;
+	font-size: 40px;
+	white-space: pre-line;
+	position: absolute;
+}
+
+.ml p {
+	position: absolute;
+	top: 285px;
+	left: 100px;
+	color: white;
+	margin: 0;
+	padding: 20px;
+	font-size: 20px;
+	white-space: pre-line;
+}
+
+.mr h2 {
+	font-family: 'Open Sans', serif;
+	color: red;
+	margin: 0;
+	top: 200px;
+	right: 120px;
+	padding: 0px;
+	text-transform: uppercase;
+	font-size: 40px;
+	white-space: pre-line;
+	position: absolute;
+}
+
+.mr p {
+	position: absolute;
+	top: 220px;
+	right: 120px;
+	color: red;
+	margin: 0;
+	padding: 20px;
+	font-size: 20px;
+	white-space: pre-line;
+}
+
+.module1 {
+	background-color: white;
+  	width: 100%;
+	height: 700px;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
+.doublel h2 {
+font-family: 'Open Sans', serif;
+	color: white;
+	margin: 0;
+	top: 225px;
+	left: 100px;
+	padding: 0px;
+	text-transform: uppercase;
+	font-size: 40px;
+	white-space: pre-line;
+	position: absolute;
+}
+
+.doubler h2 {
+	font-family: 'Open Sans', serif;
+	color: red;
+	margin: 0;
+	top: 165px;
+	right: 120px;
+	padding: 0px;
+	text-transform: uppercase;
+	font-size: 40px;
+	white-space: pre-line;
+	position: absolute;
+}
+
+div.module1 img {
+	margin: 0;
+	position: absolute;
+	width: 650px;
+	height: 650px;
+	top: 25px;
+	left: 100px;
+}
+
+.module2 {
+	background-image: url("../images/background2.jpg");
+  	width: 100%;
+	height: 900px;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
+div.module2 img {
+	margin: 0;
+	position: absolute;
+	width: 650px;
+	height: 650px;
+	top: 125px;
+	right: 100px;
+}
+
+.module3 {
+	background-color: white;
+  	width: 100%;
+	height: 700px;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
+div.module3 img {
+	margin: 0;
+	position: absolute;
+	width: 650px;
+	height: 650px;
+	top: 25px;
+	left: 100px;
+}
+
+.module4 {
+	background-image: url("../images/background4.jpg");
+  	width: 100%;
+	height: 900px;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
+div.module4 img {
+	margin: 0;
+	position: absolute;
+	width: 650px;
+	height: 650px;
+	top: 125px;
+	right: 100px;
+}
+
+.dell24 {
+	background-image: url("../images/dell24-4.jpg");
+  	width: 100%;
+	height: 900px;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
+div.dell24 img {
+	margin: 0;
+}
+
+div.dell24 h2 {
+	font-family: 'Open Sans', serif;
+	color: black;
+	margin: 0;
+	top: 100px;
+	right: 90px;
+	padding: 0px;
+	text-transform: uppercase;
+	font-size: 30px;
+	white-space: pre-line;
+	position: absolute;
+}
+
+div.dell24 p {
+	position: absolute;
+	top: 150px;
+	right: 160px;
+	color: black;
+	margin: auto;
+	padding: 0px;
+	font-size: 15px;
+	white-space: pre-line;
+}
+
+div.spec img {
+	margin: 0;
+}
+
+div.spec img:hover {
+	opacity: 0.75;
+	filter: alpha(opacity=75);
+	border: 1px solid #777;
+}
+
+div.spec h3 {
+	font-family: 'Open Sans', serif;
+	color: black;
+	margin: 0;
+	text-align: center;
+	padding: 0px;
+	font-size: 22px;
+}
+
+div.spec p {
+	color: black;
+	margin: 0;
+	text-align: center;
+	padding: 0px;
+	font-size: 18px;
+	white-space: pre-line;
+}
+
+div.spec button {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	width: 200px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+div.spec button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}

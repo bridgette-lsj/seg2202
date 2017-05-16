@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<head>
+
+<title>Register</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="icon" href="../img/favicon.png">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../js/top.js"></script>
+<script src="../js/forms.js"></script>
+
+<!--css-->
+<link href="../css/footer2.css" rel="stylesheet" type="text/css" />
+<link href="../css/nav.css" rel="stylesheet" type="text/css" />
+<link href="../css/bg.css" rel="stylesheet" type="text/css" />
+<link href="../css/share.css" rel="stylesheet" type="text/css" />
+<link href="../css/contain.css" rel="stylesheet" type="text/css" />
+<link href="../css/forms.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+    <!--nav-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">TechWhiz</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Desktop</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="hpenvy700.html">Mainstream Desktop</a></li>
+                                    <li><a href="appleimac.html">All-in-One Desktop</a></li>
+                                    <li><a href="alienwarealpha.html">Compact Desktop</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Laptop</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="dellxps13.html">Ultrabook</a></li>
+                                    <li><a href="lenovoyoga500.html">Convertible Laptop</a></li>
+                                    <li><a href="surfacepro4.html">2-in-1 Devices</a></li>
+                                    <li><a href="acere5.html">Traditional Laptop</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Peripherals</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="applekeyboard.html">Keyboard</a></li>
+                                    <li><a href="boseheadphone.html">Headphones</a></li>
+                                    <li><a href="applemouse.html">Mouse</a></li>
+                                    <li><a href="seagateharddrive.html">External Hard Drive</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="bitdefender1.html">Antivirus</a></li>
+                                    <li><a href="microsoftoffice.html">Microsoft Office</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="ep.html">Events and Promotions</a></li>
+                    <li><a href="faq.html">Support</a></li>
+                    <li><a href="tc.html">Terms and Conditions</a></li>
+                </ul>
+
+                <!--search-->
+                <form class="navbar-form navbar-left">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!--login and register-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="register.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Register-->
+    <div class="center">
+        <div class="container">
+            <div class="forms">
+
+                <h1 class="well">Sign Up</h1>
+
+                <div class="col-lg-12 well">
+
+                        <form action="" method="post">
+                            <div class="col-lg-10">
+                                <div class="row">
+
+                                    <div class="form-group">
+                                        <label for="firstname">First name: <span class="req">* </span></label>
+                                        <input class="form-control" type="text" name="firstname" alt="first name" id="txt" onkeyup="Validate(this)" required />
+                                        <div id="errFirst"></div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="lastname">Last name: <span class="req">* </span>  </label>
+                                        <input class="form-control" type="text" name="lastname" alt="last name" id="txt" onkeyup="Validate(this)" required />
+                                        <div id="errLast"></div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">Email Address: <span class="req">* </span> <small> &nbsp; This will be your login user name</small></label>
+                                        <input class="form-control" type="text" name="email" alt="email" id="email" onchange="email_validate(this.value);" required />
+                                        <small> &nbsp; We'll never share your email with anyone else.</small>
+                                        <div class="status" id="status2"></div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">Password: <span class="req">* </span> </label>
+                                        <input class="form-control inputpass" type="password" name="password" alt="password" id="pass1" placeholder="at least 8 characters" required />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">Confirm Password:  <span class="req">* </span> </label>
+                                        <input class="form-control inputpass" type="password" name="password" alt="confirm password" id="pass2" onkeyup="checkPass(); return false;" required />
+                                        <span id="message"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <hr />
+                                        <input type="checkbox" name="terms" alt="agree to T&C" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" id="terms" required />
+                                        <label for="terms"> &nbsp; I agree with the <a href="tc.html" style="color:darkslateblue;">terms and conditions</a> for Registration.</label><span class="req">* </span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="checkbox" name="subscribe" alt="subscribe">
+                                        <label for="subscribe"> &nbsp; I would love TechWhiz to tell me about events, promotions and discounts by email.</label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input class="btn btn-md btn-success" type="submit" name="sign up" alt="sign up" value="Sign Up">
+                                    </div>
+
+                                    <h5>You will receive an email to complete the registration and validation process. </h5>
+                                    <span class="req"><small style="float: right">* required fields </small></span>
+                                    <h5>Be sure to check your spam folders if you cannot find the confirmation email.</h5>
+
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                    </div>
+    </div>
+    </div>
+  
+
+
+<!--footer-->
+	<footer class="footer-distributed">
+	
+
+			<div class="footer-left">
+
+				<h3>Tech<span>Whiz</span></h3>
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+						|
+					<a href="about.html">About</a>
+						|
+					<a href="hpenvy700.html">Products</a>
+						|
+					<a href="order.html">Order</a>
+						|
+					<a href="contact.html">Contact</a>
+					|
+					<a href="ep.html">Events and Promotions</a>
+					|
+					<a href="support.html">Support</a>
+					|
+					<a href="tc.html">Terms and Conditions</a>
+						
+				</p>
+
+				<p class="footer-company-name">TechWhiz &copy; 2016</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>No. 20, Jalan PJS 11/5, Bandar Sunway </span> 46150 Petaling Jaya, Selangor, Malaysia</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+603 62556655</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:janice1397@gmail.com">techwhiz@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					TechWhiz started its business on 5th October 2016 as a trading company that distributes computer hardware and software.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+					
+					
+
+				</div>
+
+
+			</div>
+			
+ <div style="padding-left: 28px">
+                            <p style="font-size: 15px; color:white;">Subscribe to us: &nbsp;</p>
+                            <input type="text" name="email" alt="email" style="height: 45px; width: 75%; border: hidden; padding-left: 20px" placeholder="Enter Email..." required /> &nbsp;&nbsp;
+                            <button class="btn btn-md btn-info btn-primary" type="button"><a href="mailto:janice1397@gmail.com">Subscribe</a></button>
+                            <br />
+                        </div>
+		</footer>
+            
+
+</div>
+</body>
+</html>
